@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlatih HTML</title>
+</head>
+<body>
+    <h1>Buat Account Baru</h1>
+
+    <h2>Sign Up Form</h2>
+    <form action="welcome.html">
+        <label for="first_name">First Name :</label><br><br>
+        <input type="text" name="first_name" id="first_name" value="Ziel">
+        
+        <br><br>
+
+        <label for="last_name">Last Name :</label><br><br>
+        <input type="text" name="last_name" id="last_name" value="Alfino">
+        
+        <br><br>
+
+        <label for="gender">Gender</label><br><br>
+        <input type="radio" name="gender" id="gender" value="male" checked> Male <br>
+        <input type="radio" name="gender" id="gender" value="femal"> Female
+
+        <br><br>
+
+        <label for="nationality">Nationality</label><br><br>
+        <select name="nationality" id="nationality">
+            <option value="INA" selected>Indonesia</option>
+            <option value="AUS">Australia</option>
+            <option value="KOR">Korea</option>
+            <option value="OTR">Other</option>
+        </select>
+
+        <br><br>
+
+        <label for="language">Language</label><br><br>
+        <input type="checkbox" name="language" id="language" value="indoensia" checked> Bahasa Indonesia <br>
+        <input type="checkbox" name="language" id="language" value="english" checked> English <br>
+        <input type="checkbox" name="language" id="language" value="other"> Other <br>
+
+        <br><br>
+
+        <label for="bio">Bio</label><br><br>
+        <textarea name="bio" id="bio" cols="30" rows="10">My Bio</textarea>
+
+        <br><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>

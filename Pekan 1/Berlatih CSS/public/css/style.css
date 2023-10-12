@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/pattern.jpg);
+    user-select: none;
+}
+
+/* Navbar */
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul a {
+    padding: 16px;
+    text-decoration: none;
+    color: orange;
+}
+
+header nav ul a:hover {
+    color: white;
+    background-color: orange;
+    transition-duration: 0.25s;
+}
+
+/* Content */
+section {
+    margin-top: 48px;
+    margin-bottom: 32px;
+    padding: 16px;
+    max-width: 768px;
+    background-color: white;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section article {
+    border-bottom: 4px;
+    border-style: none none solid none;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
