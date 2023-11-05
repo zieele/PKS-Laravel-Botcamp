@@ -1,0 +1,32 @@
+1.  create database myshop;
+
+2.  CREATE TABLE users (
+        id int(8) PRIMARY KEY AUTO_INCREMENT,
+        name varchar(255),
+        email varchar(255),
+        password varchar(255)
+    );
+    CREATE TABLE categories (
+        id int(8) PRIMARY KEY AUTO_INCREMENT,
+        name varchar(255)
+    );
+    CREATE TABLE items (
+        id int(8) PRIMARY KEY AUTO_INCREMENT,
+        name varchar(255),
+        description varchar(255)
+        price int(8),
+        stock int(8),
+        FOREIGN KEY (category_id) REFERENCES kategori(id)
+    );
+
+3.  INSERT INTO users (name, email, password) VALUES
+    ("John Doe", "john@doe.com", "john123"),
+    ("Jane Doe", "jane@doe.com", "jane123")
+    
+    INSERT INTO categories (name) VALUES
+    ("gadget"), ("cloth"), ("men"), ("woman"), ("branded")
+    
+    INSERT INTO items (name, description, price, stock, category_id) VALUES
+    ("Sumsang b50", "hape keren dari merek sumsang", 4000000, 100, 1),
+    ("Uniklooh", "baju keren dari brand ternama", 500000, 50, 2),
+    ("IMHO Watch", "jam tangan anak yang jujur banget", 2000000, 10 ,1)
