@@ -1,0 +1,8 @@
+1.  SELECT id, name, email from users; 
+
+    SELECT * from items WHERE price > 1000000;
+    SELECT * from items WHERE name LIKE '%uniklo%';
+
+    SELECT items.name, items.description, items.price, items.stock, items.category_id, categories.name AS categories FROM items LEFT JOIN categories ON items.category_id = categories_id;
+
+2.  UPDATE items SET price=2500000 WHERE name='sumsang b50'
