@@ -19,8 +19,9 @@
                 Kids : "Mike", "Dustin", "Will", "Lucas", "Max", "Eleven" 
                 Adults: "Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"
             */
-        $kids; // Lengkapi di sini
-        $adults;
+        print_r($kids = ["Mike", "Dustin", "Will", "Lucas", "Max", "Eleven"]); // Lengkapi di 
+        echo "<br>";
+        print_r($adults = ["Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"]);
         echo "<h3> Soal 2</h3>";
         /* 
                 SOAL NO 2
@@ -31,16 +32,18 @@
         echo "Total Kids: "; // Berapa panjang array kids
         echo "<br>";
         echo "<ol>";
-        echo "<li> $kids[0] </li>";
-        // Lanjutkan
-
+        foreach ($kids as $kid) {    
+            echo "<li> $kid </li>";;
+        }
         echo "</ol>";
 
         echo "Total Adults: "; // Berapa panjang array adults
         echo "<br>";
         echo "<ol>";
-        echo "<li> $adults[0] </li>";
         // Lanjutkan
+        foreach ($kids as $adult) {    
+            echo "<li> $adult </li>";;
+        }
 
         echo "</ol>";
 
@@ -103,10 +106,42 @@
                                 [Aliases] => El
                                 [Status] => Alive
                             )
-
                     )
                 
             */
+
+            $array = array(
+                array(
+                        "Name" => "Will Byers",
+                        "Age" => "12",
+                        "Aliases" => "Will the Wise",
+                        "Status" => "Alive"
+                ),
+
+                array(
+                        "Name" => "Mike Wheeler",
+                        "Age" => "12",
+                        "Aliases" => "Dugeon Master",
+                        "Status" => "Alive"
+                ),
+
+                array(
+                        "Name" => "Jim Hooper",
+                        "Age" => "43",
+                        "Aliases" => "Chief Hopper",
+                        "Status" => "Deceased"
+                ),
+
+                array(
+                        "Name" => "Eleven",
+                        "Age" => "12",
+                        "Aliases" => "El",
+                        "Status" => "Alive"
+                )
+            );
+
+            print_r($array);
+
         ?>
     </body>
 
